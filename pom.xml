@@ -24,9 +24,10 @@
         <!-- QA BASE Custom Libraries -->
         <dependency>
             <groupId>com.toob</groupId>
-            <artifactId>qabase-core</artifactId>
+            <artifactId>qabase-http</artifactId>
             <version>0.0.1</version>
         </dependency>
+
     </dependencies>
 
 </project>
