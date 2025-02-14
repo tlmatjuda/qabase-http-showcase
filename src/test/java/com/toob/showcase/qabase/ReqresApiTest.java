@@ -21,13 +21,12 @@ import static org.junit.jupiter.api.Assertions.assertNotNull;
 @SpringBootTest
 class ReqresApiTest extends AbstractHttpTest {
 
-
     @Test
     @Story("Fetch Single User")
     void shouldGetSingleUser() {
         final String id = "2";
 
-        Response response = step("Fetch User By Id}", () -> {
+        Response response = step( String.format("Fetch User By Id : %s", id), () -> {
             Response internalResponse = RestClient.get(String.format("/api/user/%s", id));
             assertNotNull(internalResponse);
             return internalResponse;
