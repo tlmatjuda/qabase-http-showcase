@@ -4,11 +4,9 @@ import com.toob.qabase.http.AbstractHttpTest;
 import com.toob.qabase.http.RestClient;
 import io.qameta.allure.Epic;
 import io.qameta.allure.Feature;
-import io.qameta.allure.Step;
 import io.qameta.allure.Story;
 import io.restassured.response.Response;
 import org.junit.jupiter.api.Test;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
 import static com.toob.qabase.http.support.HttpSupport.attachHttpResponse;
