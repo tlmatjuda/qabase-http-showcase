@@ -9,8 +9,6 @@ import io.restassured.response.Response;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
-import static com.toob.qabase.http.support.HttpSupport.attachHttpResponse;
-import static com.toob.qabase.http.support.HttpSupport.confirmStatusCode;
 import static io.qameta.allure.Allure.step;
 import static org.hamcrest.Matchers.greaterThan;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
@@ -34,7 +32,7 @@ class ReqresApiTest extends AbstractHttpTest {
 
         confirmStatusCode(200, response);
 
-        step("Validate response contains at least one TODO item", () -> {
+        step("Validate response contains at least one User record", () -> {
             response.then().body("size()", greaterThan(0));
         });
 
