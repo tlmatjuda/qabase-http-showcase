@@ -7,5 +7,7 @@ import org.springframework.context.annotation.Import;
 
 @SpringBootConfiguration
 @EnableAutoConfiguration
+
+// Import the Core Framework Spring Factory in order to be able to load all supplied beans.
 @Import({QaBaseCoreModuleFactory.class})
 public class AutomationModule {}

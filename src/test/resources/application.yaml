@@ -3,4 +3,5 @@
 # QA BASE CORE OVERRIDES
 # ======================================================================================================================
 web-service:
+  # Base Target REST API URL
   base-url: "https://reqres.in"
